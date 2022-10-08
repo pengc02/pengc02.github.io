@@ -1,1 +1,1 @@
-# pengc02.github.io
+Refer to [Hux Blog](https://huangxuan.me)
