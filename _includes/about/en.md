@@ -1,1 +1,0 @@
-Hey, the english version is coming soon!
