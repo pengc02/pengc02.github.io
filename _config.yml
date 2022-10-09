@@ -1,22 +1,21 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: Pengc's Blog
+SEOTitle: 你的博客 | My Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: peng_c0@126.com
 description: ""
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
-baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "pengc02.github.io"              # your host, for absolute URL
+baseurl: "/about"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+
+github_username:    pengc02
 #twitter_username:  huxpro
-facebook_username:  huxpro
+#facebook_username:  huxpro
 
 
 
