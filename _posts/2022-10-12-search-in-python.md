@@ -6,10 +6,12 @@ author:     "Pengc"
 catalog: false
 published: true
 header-style: text
-description: testtsetetsets
+excerpt_separator: <!--more-->
 tags:
   - python
 ---
+
+这件事情告诉我们，python搜索要慎重<!--more-->
 
 > 来源于一个死活跑不出来的小作业
 
