@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Pack a Python Project into EXE"
-date:       2022-10-12 
+date:       2022-11-1
 author:     "Pengc"
 catalog: false
 published: true
