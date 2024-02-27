@@ -1,6 +1,6 @@
-@article{long2023himloco,
-  author    = {Junfeng Long, Zirui Wang, Quanyi Li, Jiawei Gao, Liu Cao, Jiangmiao Pang},
-  title     = {Hybrid Internal Model: Learning Agile Legged Locomotion with Simulated Robot Response},
-  journal   = {Arxiv},
-  year      = {2023},
+@misc{shao2023control4d,
+author = {Ruizhi Shao, Jingxiang Sun, Cheng Peng, Zerong Zheng, Boyao Zhou, Hongwen Zhang, Yebin Liu. },
+title = {Control4D: Dynamic Portrait Editing by Learning 4D GAN from 2D Diffusion-based Editor},
+publisher = {arxiv},
+year = {2023}
 }
