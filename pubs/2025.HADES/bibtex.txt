@@ -1,0 +1,7 @@
+@inproceedings{liao2025hades,
+  title={HADES: Human Avatar with Dynamic Explicit Hair Strands},
+  author={Liao, Zhanfeng and Tu, Hanzhang and Peng, Cheng and Zhang, Hongwen and Zhou, Boyao and Liu, Yebin},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={12318--12327},
+  year={2025}
+}

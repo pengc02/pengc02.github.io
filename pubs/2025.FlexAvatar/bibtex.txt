@@ -1,0 +1,9 @@
+@misc{peng2025flexavatarflexiblelargereconstruction,
+      title={FlexAvatar: Flexible Large Reconstruction Model for Animatable Gaussian Head Avatars with Detailed Deformation}, 
+      author={Cheng Peng and Zhuo Su and Liao Wang and Chen Guo and Zhaohu Li and Chengjiang Long and Zheng Lv and Jingxiang Sun and Chenyangguang Zhang and Yebin Liu},
+      year={2025},
+      eprint={2512.17717},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.17717}, 
+}
