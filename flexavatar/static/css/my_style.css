@@ -145,6 +145,113 @@
   margin-right: 5px;/* 右边的外边距 */
   /* margin-bottom: 25px;底部的外边距 */
 }
+.teaser-overlay-container {
+  position: relative;
+  width: 90%;
+  margin: -40px auto 0;
+}
+.teaser-overlay-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.teaser-overlay-video {
+  position: absolute;
+  top: -1%;
+  right: 0.5%;
+  z-index: 2;
+}
+.teaser-overlay-video video {
+  width: auto;
+  height: auto;
+  display: block;
+}
+.results-carousel-shell {
+  width: min(94%, 1400px);
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.results-carousel-track {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 4px 0 12px;
+}
+.results-carousel-track::-webkit-scrollbar {
+  height: 8px;
+}
+.results-carousel-track::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: #c5cdd7;
+}
+.results-pair-card {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.results-video-card {
+  aspect-ratio: 1682 / 802;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent;
+}
+.results-video-card.ratio-1650 {
+  aspect-ratio: 1650 / 802;
+}
+.results-video-card.ratio-cross {
+  aspect-ratio: 2818 / 1636;
+}
+.results-video-card.ratio-cross-wide {
+  aspect-ratio: 3004 / 1636;
+}
+.results-video-card video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #ffffff;
+}
+.results-video-card video.crop-right-2 {
+  clip-path: inset(0 2px 0 0);
+}
+/* For tracks that directly contain video cards (e.g. Cross-reenactment),
+   show exactly one video per page. */
+.results-carousel-track > .results-video-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.gallery-arrow {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d0d6de;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #2f3640;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.1);
+}
+.gallery-arrow:hover {
+  background: #f5f7fa;
+}
+.nerf_title_v2 {
+  color: #2f3640;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.78),
+    0 2px 0 rgba(255, 255, 255, 0.54),
+    0 3px 8px rgba(31, 41, 55, 0.26);
+}
 .img-move-up {
   position: relative;
   top: -10px; /* Move the image up by 10px */
@@ -230,6 +337,21 @@
     width: 40px;
     height: 40px;
   }
+  .results-carousel-shell {
+    width: 95%;
+    gap: 6px;
+  }
+  .results-carousel-track {
+    gap: 10px;
+  }
+  .results-pair-card {
+    gap: 8px;
+  }
+  .gallery-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 767px) {
   .img-magnifier-glass {
@@ -286,28 +408,32 @@
 } */
 
 .abstract-container {
-    width: 90%; /* 宽度为页面宽度的70% */
-    margin: 20px auto; /* 居中显示，上下边距20px */
-    background-color: #fff8e1; /* 米黄色背景 */
-    padding: 25px 30px; /* 内边距 */
-    border-radius: 10px; /* 圆角边框 */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
-    border-left: 5px solid #ffd54f; /* 左侧装饰条 */
+    width: 90%;
+    margin: 14px auto 24px;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .abstract-container p {
-    margin: 0; /* 移除段落默认外边距 */
-    line-height: 1.6; /* 增加行高提升可读性 */
-    color: #333; /* 文字颜色 */
-    text-align: justify; /* 两端对齐 */
-    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.75;
+    color: #2d333a;
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
-/* 响应式设计：在小屏幕上调整为90%宽度 */
+/* 响应式设计：在小屏幕上缩小内边距 */
 @media (max-width: 768px) {
     .abstract-container {
-        width: 90%;
-        padding: 20px;
+        width: 92%;
+        padding: 0;
+    }
+    .abstract-container p {
+        font-size: 15px;
+        line-height: 1.7;
     }
 }
 

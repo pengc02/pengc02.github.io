@@ -90,25 +90,26 @@
                         <i class="fab fa-youtube"></i> Video </a>
                         <!-- <i class="fa-brands fa-github"></i> Video </a> -->
                 </div>
+                <div class="teaser-overlay-container">
+                    <img class="teaser-overlay-image" src="assets_flexavatar/images/teaser-full.png" alt="FlexAvatar teaser full image">
+                    <div class="teaser-overlay-video">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/grid_video_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
 
             </div>
         </div>
 
     </div>
 
-    <div class="white_section_nerf  w-container">
-        <div class="grid-container-1">
-            <img src="assets_flexavatar/images/teaser.png" width="90%" style="display: block; margin: 20px auto;">
-        </div>
-    </div>
-
-
     <div class="white_section_nerf w-container">
     <h2 class="grey-heading_nerf">Abstract</h2>
     <div class="grid-container-1">
         <!-- 为abstract内容添加特殊样式 -->
         <div class="abstract-container">
-            <p style="margin-left: 25px;">
+            <p>
                 We present <strong>FlexAvatar</strong>, a flexible large reconstruction model for high-fidelity 3D head avatars with detailed dynamic deformation from single or sparse images, without requiring camera poses or expression labels. 
                 It leverages a <strong>transformer-based reconstruction model</strong> with structured head query tokens as canonical anchor to aggregate flexible input-number-agnostic, camera-pose-free and expression-free inputs into a robust canonical 3D representation.
                 For detailed dynamic deformation, we introduce a <strong>lightweight UNet decoder</strong> conditioned on UV-space position maps, which can produce detailed expression-dependent deformations in real time. 
@@ -116,7 +117,7 @@
                 Moreover, a lightweight <strong>10-second refinement</strong> can further enhances identity-specific details in extreme identities without affecting deformation quality.
                 Extensive experiments demonstrate that our FlexAvatar achieves superior 3D consistency, detailed dynamic realism compared with previous methods, providing a practical solution for animatable 3D avatar creation.
             </p>
-        </div>
+    </div>
     </div>
     </div>
 
@@ -139,6 +140,77 @@
             <!-- <p><strong>FlexAvatar</strong> reconstructs a high-quality Gaussian head avatar by mapping input images with varying expressions and camera views into Gaussian representations in <strong>UV space</strong>, through the following steps:</p> -->
             <p>Ultimately, our proposed <strong>FlexAvatar</strong> produces <strong>detailed, real-time 360°</strong> reenactment renderings.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="white_section_nerf w-container">
+        <h2 class="grey-heading_nerf">Self-reenactment</h2>
+        <div class="results-carousel-shell">
+            <button class="gallery-arrow" data-gallery-target="self-reenactment-track" data-direction="-1" aria-label="Scroll self-reenactment left">&#10094;</button>
+            <div class="results-carousel-track" id="self-reenactment-track">
+                <div class="results-pair-card">
+                    <div class="results-video-card">
+                        <video class="crop-right-2" autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/1_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="results-video-card ratio-1650">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/4_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="results-pair-card">
+                    <div class="results-video-card">
+                        <video class="crop-right-2" autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/2_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="results-video-card ratio-1650">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/5_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="results-pair-card">
+                    <div class="results-video-card">
+                        <video class="crop-right-2" autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/3_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="results-video-card ratio-1650">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets_flexavatar/videos/self-reenactment/6_h264.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-arrow" data-gallery-target="self-reenactment-track" data-direction="1" aria-label="Scroll self-reenactment right">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="white_section_nerf w-container">
+        <h2 class="grey-heading_nerf">Cross-reenactment</h2>
+        <div class="results-carousel-shell">
+            <button class="gallery-arrow" data-gallery-target="cross-reenactment-track" data-direction="-1" aria-label="Scroll cross-reenactment left">&#10094;</button>
+            <div class="results-carousel-track" id="cross-reenactment-track">
+                <div class="results-video-card ratio-cross">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets_flexavatar/videos/cross-reenactment/cross_017.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="results-video-card ratio-cross">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets_flexavatar/videos/cross-reenactment/cross_031.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="results-video-card ratio-cross-wide">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets_flexavatar/videos/cross-reenactment/cross_1511.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <button class="gallery-arrow" data-gallery-target="cross-reenactment-track" data-direction="1" aria-label="Scroll cross-reenactment right">&#10095;</button>
         </div>
     </div>
     
@@ -168,6 +240,46 @@
 </div>
 </div> -->
 
+<script>
+    (function () {
+        function syncTeaserOverlayVideoHeight() {
+            const teaserImage = document.querySelector(".teaser-overlay-image");
+            const teaserVideo = document.querySelector(".teaser-overlay-video video");
+            if (!teaserImage || !teaserVideo) return;
+
+            const imageHeight = teaserImage.getBoundingClientRect().height;
+            if (imageHeight > 0) {
+                teaserVideo.style.height = (imageHeight * 0.93) + "px";
+                teaserVideo.style.width = "auto";
+            }
+        }
+
+        window.addEventListener("load", syncTeaserOverlayVideoHeight);
+        window.addEventListener("resize", syncTeaserOverlayVideoHeight);
+
+        const teaserImage = document.querySelector(".teaser-overlay-image");
+        const teaserVideo = document.querySelector(".teaser-overlay-video video");
+        if (teaserImage) teaserImage.addEventListener("load", syncTeaserOverlayVideoHeight);
+        if (teaserVideo) teaserVideo.addEventListener("loadedmetadata", syncTeaserOverlayVideoHeight);
+
+        const galleryArrows = document.querySelectorAll(".gallery-arrow[data-gallery-target]");
+        galleryArrows.forEach((arrow) => {
+            arrow.addEventListener("click", () => {
+                const track = document.getElementById(arrow.dataset.galleryTarget);
+                if (!track) return;
+
+                const direction = Number(arrow.dataset.direction) || 1;
+                const firstCard = track.querySelector(".results-pair-card") || track.querySelector(".results-video-card");
+                if (!firstCard) return;
+
+                const trackStyle = window.getComputedStyle(track);
+                const gap = parseFloat(trackStyle.columnGap || trackStyle.gap || "0") || 0;
+                const step = firstCard.getBoundingClientRect().width + gap;
+                track.scrollBy({ left: direction * step, behavior: "smooth" });
+            });
+        });
+    })();
+</script>
 </body>
 <footer>
     This project page is inspired by <a href="https://sweetdreamer3d.github.io/">SweetDreamer</a> and <a href="https://dreamgaussian.github.io/">DreamGaussian</a>.
